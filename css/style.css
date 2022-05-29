@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     font-size: 15px;
     position: relative;
-    background-color: #FEF9EF;
- }
+    background-color: #fcf2f2;
+}
 
 p{
     font-size: 12.5px;
@@ -29,14 +33,18 @@ li{
 
 /*mainmenu*/
 img.silverlogo{
-    height: 60px;
+    height: 70px;
     float: left;
     margin-left: 30px;
 }
 
+.slideshow-container{
+    padding-top: 50px;
+}
+
 .theme-menu{
-    background-color: #F0D290;
-    height: 60px;
+    background-color: #f1dcda;
+    height: 75px;
     width: 100%;
     padding-left: 3px;
     position: fixed;
@@ -45,6 +53,7 @@ img.silverlogo{
 
 .menu-wrapper{
     padding-left: 265px;
+    padding-top: 7px;
 }
 
 .menu-wrapper ul li{
@@ -57,7 +66,7 @@ img.silverlogo{
 }
 
 .menu-wrapper ul li a:hover{
-    background-color: white;
+    color: white;
     font-weight: bold;
 }
 
@@ -68,7 +77,7 @@ img.silverlogo{
 .menu-wrapper ul li >.sub-menu{
     display: none;
     position: absolute;
-    background-color: #F0D290;
+    background-color: #f1dcda;
 }
 
 .menu-wrapper ul li:hover .sub-menu{
@@ -173,15 +182,11 @@ form input[type="text"]:focus{
 }
 
 /*banner*/
-.theme-banner{
-    position: relative;
-}
-
 .mySlides {
     display: block;
     padding: 80px 0px 30px 0px;
     text-align: center;
-    height: 500px;
+    height: 580px;
     width: 100%;
 }
 
@@ -205,6 +210,9 @@ form input[type="text"]:focus{
 }
 
 /*product*/
+.column{
+    width: 33%;
+}
 .product-name{
     margin-top: 30px;
     font-size: 15px;
@@ -230,28 +238,28 @@ form input[type="text"]:focus{
 
 .row-1{
     display: flex;
+    width: 100%;
 }
 
 div.white-dress{
-    margin-left: 100px;
     margin-top: 60px;
     text-align: center;
 }
 
 img.white-dress-1{
-    height: 450px;
+    width: 85%;
     transition: all 0.5s;
     cursor: pointer;
 }
 
 img.white-dress-2{
-    height: 450px;
+    width: 85%;
     transition: all 0.5s;
     cursor: pointer;
 }
 
 img.white-dress-3{
-    height: 450px;
+    width: 85%;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -270,105 +278,117 @@ img.white-dress-3:hover {
 
 
 /*newcollection*/
-.new-1{
-    display: flex;
-    margin-left: 80px;
+.share{
+    clear: both;
+    padding-top: 30px;
+    font-size: 13px;
+    font-style: italic;
 }
 
-div.new-dress{
-    margin-left: 50px;
-    margin-top: 60px;
+.share>ul>li>i{
+    color:#001E6C;
+}
+
+h2{
+    padding-top: 15px;
     text-align: center;
 }
 
-img.new-collection-1{
-    height: 500px;
-    transition: all 0.5s;
+.new-dress, .new-dress-3{
+    margin: 40px auto;
+    margin-left: 45px;
+    padding: 15px;
+    background-color: white;
+    width: 45%;
+    border-radius: 10px;
+    float: left;
+}
+
+.new-dress img, .new-dress-3 img{
+    float: left;
+    width: 40%;
+    margin-top: 17px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.new-dress p, .new-dress-3 p{
+    padding: 10px 15px 10px 0;
+    line-height: 23px;
+    text-align: justify;
+}
+
+.new-dress button:hover{
     cursor: pointer;
+    background-color: #A64B2A;
 }
 
-img.new-collection-2{
-    height: 500px;
-    transition: all 0.5s;
+.new-dress-2 button:hover{
     cursor: pointer;
+    background-color: #A64B2A;
 }
 
-img.new-collection-1:hover {
-    transform: scale(1.1);
+.new-dress-3 button:hover{
+    cursor: pointer;
+    background-color: #A64B2A;
 }
 
-img.new-collection-2:hover {
-    transform: scale(1.1);
+.new-dress-4 button:hover{
+    cursor: pointer;
+    background-color: #A64B2A;
 }
 
-/*button*/
-.view-more {
-    width: 200px;
+.new-dress button, .new-dress-3 button{
     height: 40px;
+    width: 185px;
+    color: white;
+    background-color: #BF9270;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1),4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-    background-image: linear-gradient(315deg, #F4D19B 13%, #CA965C 65%);
-    line-height: 42px;
-    padding-top: 0;
     border: none;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    margin-left: 550px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: 15px;
 }
 
-.view-more span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
+.new-dress-2, .new-dress-4{
+    margin: 40px auto;
+    padding: 15px;
+    background-color: white;
+    width: 45%;
+    border-radius: 10px;
+    float: left;
+    margin-left: 48px;
 }
 
-.view-more:before,
-.view-more:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #362222;
-    transition: all 0.3s ease;
+.new-dress-2 img, .new-dress-4 img{
+    float: right;
+    width: 40%;
+    margin-top: 17px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 8px;
 }
 
-.view-more:before{
-    height: 0%;
-    width: 2px;
+.new-dress-2 p, .new-dress-4 p{
+    padding: 10px 15px 10px 10px;
+    line-height: 23px;
+    text-align: justify;
 }
 
-.view-more:after {
-    width: 0%;
-    height: 2px;
+.new-dress-2 button, .new-dress-4 button{
+    height: 40px;
+    width: 185px;
+    color: white;
+    background-color: #BF9270;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: 15px;
 }
 
-.view-more:hover:before {
-    height: 100%;
-}
-
-.view-more:hover:after {
-    width: 100%;
-}
-
-.view-more:hover{
-    background: transparent;
-}
-
-.view-more:hover{
-    color: #362222;
-}
-
-
-.view-collection {
+.view-more {
     background-color: #c47135;
     border: none;
     color: #ffffff;
@@ -377,16 +397,16 @@ img.new-collection-2:hover {
     font-family: 'BenchNine', Arial, sans-serif;
     font-size: 15px;
     line-height: 10px;
-    margin-top: 27px;
-    margin-bottom: 20px;
-    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 15px;
     padding: 12px 10px;
     position: relative;
     font-weight: 700;
+    margin-left: 45%;
 }
 
-.view-collection:before,
-.view-collection:after {
+.view-more:before,
+.view-more:after {
     border-color: transparent;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
@@ -398,31 +418,31 @@ img.new-collection-2:hover {
     width: 24px;
 }
 
-.view-collection:before {
+.view-more:before {
     border-color: #c47135;
     border-top-width: 2px;
     left: 0px;
     top: -5px;
 }
 
-.view-collection:after {
+.view-more:after {
     border-bottom-width: 2px;
     border-color: #c47135;
     bottom: -5px;
     right: 0px;
 }
 
-.view-collection:hover{
+.view-more:hover{
     background-color: #c47135;
 }
 
-.view-collection:hover:before,
-.view-collection:hover:after{
+.view-more:hover:before,
+.view-more:hover:after{
     height: 100%;
     width: 100%;
 }
 
-.theme-banner .more .view-collection{
+.theme-banner .more .view-more{
     padding-left: 20px;
     position: absolute;
     top: 400px;
@@ -467,7 +487,7 @@ img.new-collection-2:hover {
 
 /*footer*/
 img.logo-footer{
-    height: 150px;
+    width: 15%;
     padding-top: 15px;
     margin-left: 25px;
     float: left;
@@ -476,8 +496,9 @@ img.logo-footer{
 .footer{
     width: 100%;
     height: 150px;
-    background-color: #F0D290;
+    background-color: #f1dcda;
     margin-top: 15px;
+    clear:left;
 }
 
 .contact{
@@ -535,8 +556,8 @@ img.logo-footer{
 #backtop{
     width: 35px;
     height: 35px;
-    background: #F7D08A;
-    color: #C36A2D;
+    background: #EF9F9F;
+    color: #F24C4C;
     display: flex;
     border-radius: 50%;
     position: fixed;
@@ -554,4 +575,29 @@ img.logo-footer{
 #backtop:hover{
     background: #F4DFBA;
     color: #362222;
+}
+
+@media screen and (max-width: 1100px) {
+    .new-dress, .new-dress-2, .new-dress-3, .new-dress-4{
+        width: 80%;
+    }
+
+    .menu-icon .account, .cart-icon{
+        opacity: 0;
+    }
+
+    img.silverlogo{
+        height: 50px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-wrapper, .menu-icon{
+        opacity: 0;
+    }
+
+    .new-dress, .new-dress-2, .new-dress-3, .new-dress-4{
+        width: 80%;
+    }
 }
